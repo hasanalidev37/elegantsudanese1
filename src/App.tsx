@@ -10,6 +10,7 @@ import Gallery from "./pages/Gallery";
 import FAQ from "./pages/FAQ";
 import Reviews from "./pages/Reviews";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/elegantsudanese1/">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

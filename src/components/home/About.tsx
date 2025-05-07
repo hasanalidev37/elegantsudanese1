@@ -15,9 +15,9 @@ const About = () => {
               تأسس صالون السوداني الأنيق للحلاقة لتقديم تجربة حلاقة متميزة تجمع بين الاحترافية والراحة، ونسعى لتكون الوجهة الأولى والمفضلة لخدمات الحلاقة الرجالية في الرياض.
             </p>
             <div className="mt-8">
-              <a href="/about" className="outline-button">
+              <Link to="/about" className="outline-button">
                 المزيد عن الصالون
-              </a>
+              </Link>
             </div>
           </div>
 
