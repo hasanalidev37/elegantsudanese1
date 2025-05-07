@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Scissors } from "lucide-react";
+import { logo } from "@/assets"; // Corrected import path
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
       <div className="container py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="rounded-full bg-white h-10 w-10 flex items-center justify-center">
-            <img src="/lovable-uploads/logo.png" alt="Salon Logo" className="h-8 w-8" />
+            <img src={logo} alt="Salon Logo" className="h-8 w-8" />
           </div>
           <NavLink to="/" className="text-2xl font-cairo font-bold text-barber-gold">
             صالون السوداني الأنيق

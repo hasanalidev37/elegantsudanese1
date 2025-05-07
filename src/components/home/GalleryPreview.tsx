@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import { hairImage1, hairImage2, beardImage1, childrenServiceImage } from "../../../src/assets/index";
 
 const GalleryPreview = () => {
@@ -41,9 +42,9 @@ const GalleryPreview = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="/gallery" className="gold-button">
+          <Link to="/gallery" className="gold-button">
             مشاهدة معرض الأعمال
-          </a>
+          </Link>
         </div>
       </div>
     </section>

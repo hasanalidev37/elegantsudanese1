@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import { Scissors } from "lucide-react";
 import { hairServiceImage, beardServiceImage, childrenServiceImage, skinCareServiceImage } from "../../assets/index";
 
@@ -66,9 +67,9 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-10">
-          <a href="/services" className="gold-button">
+          <Link to="/services" className="gold-button">
             عرض جميع الخدمات
-          </a>
+          </Link>
         </div>
       </div>
     </section>
